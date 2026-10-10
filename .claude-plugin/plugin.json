@@ -1,0 +1,16 @@
+{
+  "name": "dag",
+  "version": "0.1.0",
+  "description": "A live, persistent graph of a Claude Code session: turns, model steps, text, tool calls and subagents.",
+  "author": { "name": "Matheus Silva" },
+  "repository": "https://github.com/matheusbsilva/claude-dag",
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "windowTurns": { "type": "number", "title": "Turns shown in the pane", "description": "Earlier turns collapse into one summary node.", "default": 10 },
+    "maxDetailChars": { "type": "number", "title": "Max detail characters", "description": "Tool inputs, results and text are truncated to this length.", "default": 500 },
+    "excludedTools": { "type": "string", "title": "Excluded tools", "description": "Comma-separated tool names never captured.", "default": "" },
+    "exportDir": { "type": "string", "title": "Export folder", "description": "Where /dag export writes; empty means <project>/.claude/dag/exports.", "default": "" },
+    "dataDir": { "type": "string", "title": "Graph folder", "description": "Where each session's graph file lives; empty means <project>/.claude/dag.", "default": "" }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "claude-dag",
+  "description": "Claude Code mods by Matheus Silva",
+  "owner": {
+    "name": "Matheus Silva"
+  },
+  "plugins": [
+    {
+      "name": "dag",
+      "source": "./",
+      "description": "Live conversation DAG viewer for Claude Code"
+    }
+  ]
+}
